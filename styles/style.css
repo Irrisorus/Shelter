@@ -841,7 +841,7 @@ margin-bottom: 100px;
         left: -100%;
         top: 0px;
         z-index: 1;
-        transition: .3s all ease;
+        transition: all 0.3s ease 0s;
     }
     .header__top-menu_active{
         left: 0;
