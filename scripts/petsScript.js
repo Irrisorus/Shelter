@@ -11,28 +11,9 @@ let SwiperButtons=document.querySelectorAll(".button_swiper")
 console.log(slidesForSwiper);
 
 
-slidesForSwiper.forEach((el)=>{
-    if(slidesForSwiper[0].classList.contains("swiper-slide-active")){
-        prevEndButton.classList.add("swiper-button-disabled")
-        console.log("aaa")
-    }
-    else{
-        prevEndButton.classList.remove("swiper-button-disabled")
-    }
-})
 
-// SwiperButtons.forEach((el)=>{
-//     el.addEventListener("click", ()=>{
-//         if(slidesForSwiper[1].classList.contains("swiper-slide-active")){
-//             prevEndButton.classList.add("swiper-button-disabled")
-//             console.log("aaa")
-//         }
-       
-//     })
-// })
-
-new Swiper(".swiper",{
-
+let swiper=new Swiper(".swiper",{
+    
     navigation:{
 
         nextEl:".button_swiper_rigth",
@@ -58,6 +39,30 @@ new Swiper(".swiper",{
    
     
 });
+swiper.on('slideChange',function(){
+    if(this.activeIndex===0){
+        prevEndButton.classList.add("swiper-button-disabled")
+        console.log("aaa")
+    }   
+    else{
+        prevEndButton.classList.remove("swiper-button-disabled")
+    }  
+    if(this.activeIndex===(slidesForSwiper.length)-1){
+        nextEndButton.classList.add("swiper-button-disabled")
+        console.log("aaa")
+    }   
+    else{
+        nextEndButton.classList.remove("swiper-button-disabled")
+    }  
+})
+
+nextEndButton.addEventListener('click',()=>{
+    swiper.slideTo(swiper.slides.length-1,1000)
+})
+prevEndButton.addEventListener('click',()=>{
+    swiper.slideTo(0,1000)
+})
+
 
 burgerMenu.addEventListener('click',()=>{
   
