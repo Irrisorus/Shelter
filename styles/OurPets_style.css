@@ -209,6 +209,8 @@ transition: all 0.3s ease 0s;
     }
 .swipe-container{
     padding-top:45px ;
+    width: 100%;
+    
 }
 .peds__cards{
     display: flex;
@@ -226,14 +228,14 @@ transition: all 0.3s ease 0s;
     display: flex;
     width: 52px;
     height: 52px;
-    padding: 14px 13px 15px 12px;
+
     text-align: center;
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
     border-radius: 100px;
     border: 2px solid var(--color-primary, #F1CDB3);
-    transition: .5s;
+    transition: all 0.3s ease 0s;
 
 }
 .arrows-container{
@@ -242,7 +244,13 @@ transition: all 0.3s ease 0s;
     display: flex;
     justify-content: space-between;
 }
-.button_swiper_inactive{
+.swiper-slide{
+    display: flex;
+    flex-direction: column;
+   gap: 30px;
+   align-items: center;
+}
+.swiper-button-disabled{
    
     border: 2px solid var(--color-primary, #CDCDCD);
     color: var(--color-dark-s, #CDCDCD);
@@ -257,7 +265,7 @@ transition: all 0.3s ease 0s;
 .button_swiper:hover{
     background-color: #F1CDB3;
 }
-.button_swiper_inactive:hover{
+.swiper-button-disabled:hover{
     background-color: transparent;
 }
 .peds__cards{
@@ -445,17 +453,6 @@ footer{
         padding-top: 30px;
     }
  
-    .peds__cards{
-        justify-content: space-around;
-     
-      
-    }
-    .peds-card:nth-child(7){
-            display: none;
-    }
-    .peds-card:nth-child(8){
-        display: none;
-    }
     .footer__container{
         padding-top: 30px;
         gap: 60px;
@@ -486,7 +483,7 @@ footer{
         .logo__box,
         .header__menu-burger{
             position: relative;
-            z-index: 2;
+            z-index: 3;
         }
         .header__top-menu{
             position: absolute;
@@ -497,7 +494,7 @@ footer{
             width: 100%;
             left: -100%;
             top: 0px;
-            z-index: 1;
+            z-index: 2;
             transition: .3s all ease;
         }
         .header__top-list{
@@ -512,15 +509,7 @@ footer{
         .pets__title-text{
             font-size: 25px;
         }
-        .peds-card:nth-child(4){
-            display: none;
-        }
-        .peds-card:nth-child(5){
-            display: none;
-        }
-        .peds-card:nth-child(6){
-            display: none;
-        }   
+          
         /*  .peds__cards{
         height: 1350px;
         overflow: hidden;
