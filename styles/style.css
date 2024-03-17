@@ -29,8 +29,115 @@
     margin: 0 auto;
 }
 
+.popup{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    transition:  all 0.8s ease 0s;
 
+}
 
+.popup_active{
+    opacity: 1;
+    visibility: visible;
+}
+.popup__body{
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px 30px 10px;
+}
+.popup__content{
+    background-color: white;
+    color: #000000;
+    max-width: 800px;
+    padding: 30px;
+    display: flex;
+    position: relative;
+
+}
+.popup__image{
+    background-image: url("../assets/img/pets-scarlet.png");
+    height: 400px;
+    width: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-shrink: 0;
+    
+}
+.popup__block{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 30px;
+    gap:10px;
+    
+}
+
+ .popup__title{
+    font-size: 35px;
+    line-height: 130%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+ }
+ .popup__subtitle{
+    font-size: 20px;
+    line-height: 125%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+ }
+ .popup__text{
+    margin-top:20px ;
+    font-size: 15px;
+    line-height: 110%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+ 
+ }
+ .popup__params{
+    margin-top: 30px;
+    list-style-type: disc;
+    padding-left: 20px;
+ }
+ .popup__params li{
+    
+    font-size: 15px;
+    line-height: 110%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(241, 205, 179);
+    font-weight: 600;
+ 
+ }
+ .popup__params span{
+
+    font-size: 15px;
+    line-height: 110%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+ }
+ .popup__params span span{
+    font-weight: 400;
+ }
+ .popup__close{
+    position: absolute;
+    right: 10px;
+    top:10px;
+    background-image: url("../assets/img/close.png");
+    width: 10px;
+    height: 10px;
+    background-size: cover;
+ }
 .header{
    
     background-image: url(../assets/img/start-screen-background.jpg);

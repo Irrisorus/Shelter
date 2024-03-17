@@ -61,7 +61,7 @@
             </div>
         </div>
         <div class="pets">
-            <div class="container container__pets "> 
+            <div class="container container__pets " id="pets-cont"> 
                 <h3 class="pets__title-text">Our friends who <br>are looking for a house</h3>
                 <div class="swipe-container">
                 <button class="arrow arrow_left">
@@ -115,7 +115,7 @@
              
 
                 </div>
-                <button class="pet-button">Get to know the rest</button>
+                <button class="pet-button" >Get to know the rest</button>
             </div>
         </div>
         <div class="helps">
@@ -211,7 +211,30 @@
         </div>
     </footer>
 </div>
+<div id="popup" class="popup">
+    
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#pets-cont" class="popup__close"></a>
+            <div class="popup__image"></div>
+            <div class="popup__block">
+                <div class="popup__title">Jennifer</div>
+                <div class="popup__subtitle">Dog - Labrador</div>
+                <div class="popup__text">Jennifer is a sweet 2 months old Labrador that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.</div>
+
+                <ul class="popup__params">
+                    <li><span>Age: <span class="popup__age"> 2 months</span> </span></li>
+                    <li><span>Inoculations: <span class="popup__inoculations"> none</span></span></li>
+                    <li><span>Diseases:<span class="popup__diseases"> none</span></span></li>
+                    <li><span>Parasites: <span class="popup__parasites"> none</span></span></li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+</div>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="./scripts/script.js"></script>
+   
 </body>
 </html>

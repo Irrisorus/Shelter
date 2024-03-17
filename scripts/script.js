@@ -37,7 +37,10 @@ new Swiper(".swiper",{
 
 let burgerMenu=document.querySelector(".header__menu-burger");
 let headerMenu=document.querySelector(".header__top-menu")
-
+let petButton=document.querySelector(".pet-button")
+let popup=document.querySelector(".popup")
+let popupClose=document.querySelector(".popup__close")
+let popupContent=document.querySelector(".popup__content")
 burgerMenu.addEventListener('click',()=>{
   
     console.log("aaaa")
@@ -47,4 +50,17 @@ burgerMenu.addEventListener('click',()=>{
     
     
    
+})
+petButton.addEventListener("click",()=>{
+    popup.classList.add("popup_active")
+})
+popupClose.addEventListener("click",()=>{
+   
+    popup.classList.remove("popup_active")
+})
+popup.addEventListener("click",(e)=>{
+    let click=e.composedPath().includes(popupContent)
+    if(!click){
+        popup.classList.remove('popup_active');
+    }
 })
