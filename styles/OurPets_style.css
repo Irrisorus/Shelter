@@ -547,3 +547,9 @@ footer{
         height: 269px;
         }
 }
+@media only screen and (max-width:375px){
+    .arrows-container{
+        justify-content: center;
+        gap: 10px;
+    }
+}
