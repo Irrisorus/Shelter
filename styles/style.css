@@ -39,7 +39,7 @@
     z-index: 2;
     opacity: 0;
     visibility: hidden;
-    transition:  all 0.8s ease 0s;
+    transition:  all 0.5s ease 0s;
 
 }
 
@@ -64,7 +64,7 @@
 
 }
 .popup__image{
-    background-image: url("../assets/img/pets-scarlet.png");
+    background-image: url("../assets/img/pets-jennifer.png");
     height: 400px;
     width: 50%;
     background-repeat: no-repeat;
@@ -968,14 +968,12 @@ margin-bottom: 100px;
         
     text-align: center;    
     font-size: 25px;
-  
-
     font-family: Georgia;
-font-size: 25px;
-font-style: normal;
-font-weight: 400;
-line-height: 130%; /* 32.5px */
-letter-spacing: 1.5px;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 32.5px */
+    letter-spacing: 1.5px;
     }
     .header__main-subheading{
         text-align: center;
@@ -1004,6 +1002,12 @@ letter-spacing: 1.5px;
     font-weight: 400;
     line-height: 130%; /* 32.5px */
     letter-spacing: 1.5px;
+    }
+    .popup__image{
+        display: none;
+    }
+    .popup__block{
+        width: 240px;
     }
     .about__text{
         justify-content: center;
