@@ -8,6 +8,7 @@ let nextButton= document.querySelector(".button_swiper_rigth")
 let prevEndButton= document.querySelector(".button_swiper_left-end")
 let nextEndButton= document.querySelector(".button_swiper_rigth-end")
 let SwiperButtons=document.querySelectorAll(".button_swiper")
+let CurrSlider=document.querySelector(".current-slider");
 console.log(slidesForSwiper);
 
 
@@ -54,6 +55,7 @@ swiper.on('slideChange',function(){
     else{
         nextEndButton.classList.remove("swiper-button-disabled")
     }  
+    CurrSlider.textContent=swiper.activeIndex+1;
 })
 
 nextEndButton.addEventListener('click',()=>{
